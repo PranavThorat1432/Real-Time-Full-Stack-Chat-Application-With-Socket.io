@@ -15,6 +15,7 @@ export const protectRoute = async (req, res, next) => {
                 success: false
             })
         }
+        
         req.user = user;
         next();
 
