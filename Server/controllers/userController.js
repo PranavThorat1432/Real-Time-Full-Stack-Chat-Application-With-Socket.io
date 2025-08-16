@@ -1,3 +1,4 @@
+
 import cloudinary from "../lib/cloudinary.js";
 import { generateToken } from "../lib/utils.js";
 import User from "../models/User.js";
@@ -31,9 +32,11 @@ export const signup = async (req, res) => {
         })
 
         const token = generateToken(newUser._id);
+        const userObj = newUser.toObject();
+        delete userObj.password;
         res.json({
             message: 'Account created successfully',
-            userData: newUser,
+            userData: userObj,
             token,
             success: true
         })
@@ -69,9 +72,11 @@ export const login = async (req, res) => {
         }
 
         const token = generateToken(userData._id);
+        const safeUser = userData.toObject();
+        delete safeUser.password;
         res.json({
             message: 'Login successfully',
-            userData,
+            userData: safeUser,
             token,
             success: true
         })
