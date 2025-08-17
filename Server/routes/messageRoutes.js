@@ -14,7 +14,7 @@ msgRouter.get('/:id', protectRoute, getMessages);
 
 // Mark message as seen
 // @API :- /api/messages/mark/:id
-msgRouter.put('mark/:id', protectRoute, markMessageAsSeen); 
+msgRouter.put('/mark/:id', protectRoute, markMessageAsSeen); 
 
 // Send Message
 // @API :- /api/messages/send-msg/:id
