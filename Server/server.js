@@ -12,9 +12,14 @@ import jwt from 'jsonwebtoken';
 const app = express();
 const server = http.createServer(app);
 
+// Allowed frontend origins
+const allowedOrigins = [
+  'https://quickchat-real-time-full-stack-chat.vercel.app'
+];
+
 // Initialize Socket.io Server
 export const io = new Server(server, {
-    cors: {origin: '*'}
+    cors: {origin: allowedOrigins}
 })
 
 // Store online user's
