@@ -232,7 +232,7 @@ See the [LICENSE](LICENSE.md) file for details.
 
 | Platform              | Link                                                          |
 | --------------------- | ------------------------------------------------------------- |
-| 🌐 **Live Demo**      | [View Now]()                        |
+| 🌐 **Live Demo**      | [View Now](https://quickchat-real-time-full-stack-chat.vercel.app/)                        |
 | 🧑‍💻 **GitHub Repo** | [View Code](https://github.com/PranavThorat1432/Real-Time-Full-Stack-Chat-Application-With-Socket.io) |
 | 💼 **LinkedIn**       | [Connect with Me](https://www.linkedin.com/in/curiouspranavthorat/)       |
 | 📩 **Email**          | [pranavthorat95@gmail.com](mailto:pranavthorat95@gmail.com)   |
