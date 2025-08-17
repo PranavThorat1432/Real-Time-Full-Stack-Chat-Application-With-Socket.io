@@ -14,7 +14,8 @@ const server = http.createServer(app);
 
 // Allowed frontend origins
 const allowedOrigins = [
-  'https://quickchat-real-time-full-stack-chat.vercel.app'
+  'https://quickchat-real-time-full-stack-chat.vercel.app',
+  'http://localhost:5173'
 ];
 
 // Initialize Socket.io Server
